@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{254FE9FC-BC76-47BD-9E02-EF7187FDCE6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfazGrafica</RootNamespace>
+    <AssemblyName>InterfazGrafica</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormTareaLimpiezaComb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaLimpiezaComb.Designer.cs">
+      <DependentUpon>FormTareaLimpiezaComb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTareaLimpiezaAgua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaLimpiezaAgua.Designer.cs">
+      <DependentUpon>FormTareaLimpiezaAgua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTareaLimpiezaAceite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaLimpiezaAceite.Designer.cs">
+      <DependentUpon>FormTareaLimpiezaAceite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTareaTratamientoComb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaTratamientoComb.Designer.cs">
+      <DependentUpon>FormTareaTratamientoComb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTareaTratamientoAgua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaTratamientoAgua.Designer.cs">
+      <DependentUpon>FormTareaTratamientoAgua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanqueAceite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanqueAceite.Designer.cs">
+      <DependentUpon>FormTanqueAceite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTareaTratamientoAceite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaTratamientoAceite.Designer.cs">
+      <DependentUpon>FormTareaTratamientoAceite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanqueAgua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanqueAgua.Designer.cs">
+      <DependentUpon>FormTanqueAgua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteSurtidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteSurtidor.Designer.cs">
+      <DependentUpon>FormReporteSurtidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListadoCargas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoCargas.Designer.cs">
+      <DependentUpon>FormListadoCargas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrarCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrarCarga.Designer.cs">
+      <DependentUpon>FormRegistrarCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTareaReposicionComb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaReposicionComb.Designer.cs">
+      <DependentUpon>FormTareaReposicionComb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAccesoPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccesoPrincipal.Designer.cs">
+      <DependentUpon>FormAccesoPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAsignarMangueras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAsignarMangueras.Designer.cs">
+      <DependentUpon>FormAsignarMangueras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPantalla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPantalla.Designer.cs">
+      <DependentUpon>FormPantalla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTanqueCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTanqueCombustible.Designer.cs">
+      <DependentUpon>FormTanqueCombustible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSurtidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSurtidor.Designer.cs">
+      <DependentUpon>FormSurtidor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManguera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManguera.Designer.cs">
+      <DependentUpon>FormManguera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVehiculo.Designer.cs">
+      <DependentUpon>FormVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuario.Designer.cs">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTipoCombustible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTipoCombustible.Designer.cs">
+      <DependentUpon>FormTipoCombustible.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormTareaLimpiezaComb.resx">
+      <DependentUpon>FormTareaLimpiezaComb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTareaLimpiezaAgua.resx">
+      <DependentUpon>FormTareaLimpiezaAgua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTareaLimpiezaAceite.resx">
+      <DependentUpon>FormTareaLimpiezaAceite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTareaTratamientoComb.resx">
+      <DependentUpon>FormTareaTratamientoComb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTareaTratamientoAgua.resx">
+      <DependentUpon>FormTareaTratamientoAgua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanqueAceite.resx">
+      <DependentUpon>FormTanqueAceite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTareaTratamientoAceite.resx">
+      <DependentUpon>FormTareaTratamientoAceite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanqueAgua.resx">
+      <DependentUpon>FormTanqueAgua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoCargas.resx">
+      <DependentUpon>FormListadoCargas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrarCarga.resx">
+      <DependentUpon>FormRegistrarCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteSurtidor.resx">
+      <DependentUpon>FormReporteSurtidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTareaReposicionComb.resx">
+      <DependentUpon>FormTareaReposicionComb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccesoPrincipal.resx">
+      <DependentUpon>FormAccesoPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAsignarMangueras.resx">
+      <DependentUpon>FormAsignarMangueras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPantalla.resx">
+      <DependentUpon>FormPantalla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTanqueCombustible.resx">
+      <DependentUpon>FormTanqueCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSurtidor.resx">
+      <DependentUpon>FormSurtidor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManguera.resx">
+      <DependentUpon>FormManguera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVehiculo.resx">
+      <DependentUpon>FormVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuario.resx">
+      <DependentUpon>FormUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTipoCombustible.resx">
+      <DependentUpon>FormTipoCombustible.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{cb1d4b8c-1f52-4214-a1cb-e633248eeee7}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\cliente.png" />
+    <Content Include="Resources\nafta.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

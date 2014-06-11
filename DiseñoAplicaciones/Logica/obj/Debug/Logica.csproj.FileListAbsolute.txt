@@ -1,0 +1,75 @@
+C:\Users\alejandro\Documents\Visual Studio 2012\Projects\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\alejandro\Documents\Visual Studio 2012\Projects\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\alejandro\Documents\Visual Studio 2012\Projects\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\alejandro\Documents\Visual Studio 2012\Projects\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\alejandro\Documents\Visual Studio 2012\Projects\DiseñoAplicaciones\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\nuevooo\DiseñoAplicaciones\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\nuevooo\DiseñoAplicaciones\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\nuevooo\DiseñoAplicaciones\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\nuevooo\DiseñoAplicaciones\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\NewVer\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\alejandro\Desktop\NewVer\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\NewVer\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\alejandro\Desktop\NewVer\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (1)\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (1)\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (1)\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (1)\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\versiones\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\versiones\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\versiones\DiseñoAplicaciones\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\versiones\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\versiones\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\ObserverInc\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\alejandro\Desktop\ObserverInc\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\ObserverInc\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\alejandro\Desktop\ObserverInc\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (2)\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (2)\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (2)\DiseñoAplicaciones\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (2)\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (2)\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\incCarga\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\alejandro\Desktop\incCarga\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\incCarga\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\alejandro\Desktop\incCarga\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0405.3.33\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0405.3.33\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0405.3.33\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0405.3.33\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\Prefinal\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\alejandro\Desktop\Prefinal\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\Prefinal\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\alejandro\Desktop\Prefinal\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\ultimo\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\ultimo\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\ultimo\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\ultimo\DiseñoAplicaciones (3)\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\UtimoDia\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\alejandro\Desktop\UtimoDia\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\UtimoDia\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\alejandro\Desktop\UtimoDia\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\alejandro\Desktop\UtimoDia\DiseñoAplicaciones\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (5)\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (5)\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (5)\DiseñoAplicaciones\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (5)\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Lucia\Desktop\Fac\Disenio\EntregaI\DiseñoAplicaciones (5)\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\DiseñoAplicaciones\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\nuevo\esta carpate tiene q ser\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\nuevo\esta carpate tiene q ser\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\nuevo\esta carpate tiene q ser\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Agustina\Desktop\Visual Studio 2012 Ultimate [UA-07]\0605\nuevo\esta carpate tiene q ser\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\ObligatorioI_DA\DiseñoAplicaciones\DiseñoAplicaciones\Logica\bin\Debug\Logica.dll
+C:\Users\Lucia\Desktop\ObligatorioI_DA\DiseñoAplicaciones\DiseñoAplicaciones\Logica\bin\Debug\Logica.pdb
+C:\Users\Lucia\Desktop\ObligatorioI_DA\DiseñoAplicaciones\DiseñoAplicaciones\Logica\obj\Debug\Logica.dll
+C:\Users\Lucia\Desktop\ObligatorioI_DA\DiseñoAplicaciones\DiseñoAplicaciones\Logica\obj\Debug\Logica.pdb
