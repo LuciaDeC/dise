@@ -10,6 +10,7 @@ namespace Logica
     {
         private int viscosidad;
         
+        //cim
         public TanqueAceite(int numero, String descripcion, int capacidad, int viscosidad)
             : base(numero, descripcion, capacidad)
         {
@@ -21,7 +22,7 @@ namespace Logica
         }
 
         public int Viscosidad
-        {
+        { 
             get { return viscosidad; }
             set { viscosidad = value; }
         }

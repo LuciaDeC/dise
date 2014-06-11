@@ -16,6 +16,7 @@ namespace Logica
         private int CapacidadDisponible;
         private int IndiceCalidad;
 
+        //
         private List<IObserver<Tanque>> listaObeservers = new List<IObserver<Tanque>>();
 
         public Tanque(int numero, String descripcion, int capacidad)
