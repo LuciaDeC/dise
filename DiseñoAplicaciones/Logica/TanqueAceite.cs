@@ -9,7 +9,7 @@ namespace Logica
     public class TanqueAceite: Tanque
     {
         private int viscosidad;
-
+        
         public TanqueAceite(int numero, String descripcion, int capacidad, int viscosidad)
             : base(numero, descripcion, capacidad)
         {
