@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormTareaReposicionAceite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaReposicionAceite.Designer.cs">
+      <DependentUpon>FormTareaReposicionAceite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTareaReposicionAgua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareaReposicionAgua.Designer.cs">
+      <DependentUpon>FormTareaReposicionAgua.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTareaLimpiezaComb.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +190,9 @@
     <Compile Include="FormTipoCombustible.Designer.cs">
       <DependentUpon>FormTipoCombustible.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormTareaReposicionAceite.resx">
+      <DependentUpon>FormTareaReposicionAceite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTareaLimpiezaComb.resx">
       <DependentUpon>FormTareaLimpiezaComb.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormTareaLimpiezaAceite.resx">
       <DependentUpon>FormTareaLimpiezaAceite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTareaReposicionAgua.resx">
+      <DependentUpon>FormTareaReposicionAgua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTareaTratamientoComb.resx">
       <DependentUpon>FormTareaTratamientoComb.cs</DependentUpon>

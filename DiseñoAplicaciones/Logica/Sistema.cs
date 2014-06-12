@@ -18,7 +18,10 @@ namespace Logica
         private List<Surtidor> ListaSurtidores;
         private List<Vehiculo> ListaVehiculos;
         private List<Carga> ListaCargas;
-        private List<TareaReposicionCombustible> ListaTareasReposicion;
+
+        private List<TareaReposicionCombustible> ListaTareasReposicionCombustible;
+        private List<TareaReposicionAceite> ListaTareasReposicionAceite;
+        private List<TareaReposicionAgua> ListaTareasReposicionAgua;
 
         private List<TareaTratamientoAgua> ListaTareaTratamientoAgua;
         private List<TareaTratamientoAceite> ListaTareaTratamientoAceite;
@@ -55,7 +58,10 @@ namespace Logica
             this.ListaSurtidores = new List<Surtidor>();
             this.ListaVehiculos = new List<Vehiculo>();
             this.ListaCargas = new List<Carga>();
-            this.ListaTareasReposicion = new List<TareaReposicionCombustible>();
+
+            this.ListaTareasReposicionCombustible = new List<TareaReposicionCombustible>();
+            this.ListaTareasReposicionAgua = new List<TareaReposicionAgua>();
+            this.ListaTareasReposicionAceite = new List<TareaReposicionAceite>();
 
             this.ListaTareaTratamientoAgua = new List<TareaTratamientoAgua>();
             this.ListaTareaTratamientoAceite = new List<TareaTratamientoAceite>();
@@ -136,9 +142,17 @@ namespace Logica
             get { return ListaTareaLimpiezaCombustible; }
         }
 
-        public List<TareaReposicionCombustible> listaTareasReposicion
+        public List<TareaReposicionCombustible> listaTareasReposicionCombustible
         {
-            get { return ListaTareasReposicion; }
+            get { return ListaTareasReposicionCombustible; }
+        }
+        public List<TareaReposicionAgua> listaTareasReposicionAgua
+        {
+            get { return ListaTareasReposicionAgua; }
+        }
+        public List<TareaReposicionAceite> listaTareasReposicionAceite
+        {
+            get { return ListaTareasReposicionAceite; }
         }
        
         #endregion
@@ -260,13 +274,15 @@ namespace Logica
 
         #endregion
 
+        // TAREAS DE REPOSICION
+
         #region TAREAREPOSICIONCOMBUSTIBLE
 
-        public void crearTareaReposicion(int id, TanqueCombustible unTanque, int cantidad)
+        public void crearTareaReposicionCombustible(int id, TanqueCombustible unTanque, int cantidad)
         {
             if (!existeTarea(id)){
                 TareaReposicionCombustible tarea = new TareaReposicionCombustible(id, unTanque, cantidad);
-                this.listaTareasReposicion.Add(tarea);
+                this.listaTareasReposicionCombustible.Add(tarea);
             }
         }
 
@@ -280,19 +296,57 @@ namespace Logica
             return ok;
         }
 
-        public void eliminarTarea(int id)
+       
+
+        #endregion
+
+        #region TAREAREPOSICIONACEITE
+
+        public void crearTareaReposicionAceite(int id, TanqueAceite unTanque, int cantidad)
         {
-            foreach (TareaReposicionCombustible tarea in listaTareasReposicion)
+            if (!existeTarea(id))
             {
-                if (tarea.idTarea == id)
-                {
-                    listaTareasReposicion.Remove(tarea);
-                    break;
-                }
+                TareaReposicionAceite tarea = new TareaReposicionAceite(id, unTanque, cantidad);
+                this.listaTareasReposicionAceite.Add(tarea);
             }
         }
 
+        public bool chequearCapacidad(TanqueAceite tanque, int cantidad)
+        {
+            bool ok = false;
+            if (tanque.capacidadDisponible >= cantidad)
+            {
+                ok = true;
+            }
+            return ok;
+        }
+
         #endregion
+
+        #region TAREAREPOSICIONAGUA
+
+        public void crearTareaReposicionAgua(int id, TanqueAgua unTanque, int cantidad)
+        {
+            if (!existeTarea(id))
+            {
+                TareaReposicionAgua tarea = new TareaReposicionAgua(id, unTanque, cantidad);
+                this.listaTareasReposicionAgua.Add(tarea);
+            }
+        }
+
+        public bool chequearCapacidad(TanqueAgua tanque, int cantidad)
+        {
+            bool ok = false;
+            if (tanque.capacidadDisponible >= cantidad)
+            {
+                ok = true;
+            }
+            return ok;
+        }
+
+       
+        #endregion
+
 
         // TAREAS DE TRATAMIENTO
 
@@ -604,7 +658,7 @@ namespace Logica
             List<String> listaTareas = new List<String>();
             foreach (Manguera m in surtidor.listaMangueras)
             {
-                foreach (TareaReposicionCombustible t in listaTareasReposicion)
+                foreach (TareaReposicionCombustible t in listaTareasReposicionCombustible)
                 {
                     if ((m.tanque.idTanque == t.tanque.idTanque) && (t.fecha.Date >= fechaD && t.fecha.Date <= fechaH))
                     {
@@ -771,21 +825,21 @@ namespace Logica
                 listaCargas.Add(c8);
             
                 TareaReposicionCombustible tareaRep1 = new TareaReposicionCombustible(1, tanque1, 50000);
-                listaTareasReposicion.Add(tareaRep1);
+                listaTareasReposicionCombustible.Add(tareaRep1);
                 TareaReposicionCombustible tareaRep2 = new TareaReposicionCombustible(2, tanque1, 20000);
-                listaTareasReposicion.Add(tareaRep2);
+                listaTareasReposicionCombustible.Add(tareaRep2);
                 TareaReposicionCombustible tareaRep3 = new TareaReposicionCombustible(3, tanque2, 50000);
-                listaTareasReposicion.Add(tareaRep3);
+                listaTareasReposicionCombustible.Add(tareaRep3);
                 TareaReposicionCombustible tareaRep4 = new TareaReposicionCombustible(4, tanque3, 40000);
-                listaTareasReposicion.Add(tareaRep4);
+                listaTareasReposicionCombustible.Add(tareaRep4);
                 TareaReposicionCombustible tareaRep5 = new TareaReposicionCombustible(5, tanque4, 20000);
-                listaTareasReposicion.Add(tareaRep5);
+                listaTareasReposicionCombustible.Add(tareaRep5);
                 TareaReposicionCombustible tareaRep6 = new TareaReposicionCombustible(5, tanque5, 20000);
-                listaTareasReposicion.Add(tareaRep6);
+                listaTareasReposicionCombustible.Add(tareaRep6);
                 TareaReposicionCombustible tareaRep7 = new TareaReposicionCombustible(5, tanque6, 60000);
-                listaTareasReposicion.Add(tareaRep7);
+                listaTareasReposicionCombustible.Add(tareaRep7);
                 TareaReposicionCombustible tareaRep8 = new TareaReposicionCombustible(5, tanque7, 50000);
-                listaTareasReposicion.Add(tareaRep8);
+                listaTareasReposicionCombustible.Add(tareaRep8);
                 datosCargados = true;
                 return true;
             }
@@ -875,7 +929,7 @@ namespace Logica
         }
         public bool existeTarea(int idTarea)
         {
-            foreach (TareaReposicionCombustible t in listaTareasReposicion)
+            foreach (TareaReposicionCombustible t in listaTareasReposicionCombustible)
             {
                 if (t.idTarea == idTarea)
                     return true;

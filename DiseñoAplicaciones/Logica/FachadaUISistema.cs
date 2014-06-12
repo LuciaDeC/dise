@@ -286,11 +286,11 @@ namespace Logica
 
         #region TAREAREPOSICION
 
-        public void crearTareaReposicion(int id, TanqueCombustible unTanque, int cantidad)
+        public void crearTareaReposicionCombustible(int id, TanqueCombustible unTanque, int cantidad)
         {
             if (!sis.existeTarea(id) && (chequearCapacidad(unTanque, cantidad)))
             {
-                sis.crearTareaReposicion(id, unTanque, cantidad);
+                sis.crearTareaReposicionCombustible(id, unTanque, cantidad);
             }
             else
             {
@@ -298,11 +298,6 @@ namespace Logica
             }
         }
 
-
-        public void eliminarTareaReposicion(int id)
-        {
-            sis.eliminarTarea(id);
-        }
 
         public bool chequearCapacidad(TanqueCombustible tanque, int cantidad)
         {
@@ -315,9 +310,9 @@ namespace Logica
                 throw new MiExcepcion("No es posible realizar la reposición, supera la capacidad disponible.");
             }
         }
-        public List<TareaReposicionCombustible> getListaTareasReposicion()
+        public List<TareaReposicionCombustible> getListaTareasReposicionCombustible()
         {
-            return sis.listaTareasReposicion;
+            return sis.listaTareasReposicionCombustible;
         }
 
 

@@ -9,7 +9,7 @@ namespace Logica
     public class TareaReposicionAgua: TareaReposicion
     {
         public TareaReposicionAgua(int id, TanqueAgua unTanque, int cantidad) :
-            base(id, unTanque)
+            base(id, unTanque, cantidad)
         {
         }
 

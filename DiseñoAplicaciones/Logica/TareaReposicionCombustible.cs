@@ -8,25 +8,13 @@ namespace Logica
 {
     public class TareaReposicionCombustible : TareaReposicion
     {
-        private int CantidadRepuesta;
-
-
+       
         public TareaReposicionCombustible(int id, TanqueCombustible unTanque, int cantidad) :
-            base(id, unTanque)
+            base(id, unTanque, cantidad)
         {
-            this.cantidadRepuesta = cantidad;
-            unTanque.cantidadActual = unTanque.cantidadActual + cantidad;
-            unTanque.capacidadDisponible = unTanque.capacidad - unTanque.cantidadActual;
+            
         }
-
-        public int cantidadRepuesta
-        {
-            get { return CantidadRepuesta; }
-            set { CantidadRepuesta = value; }
-        }
-
-
-
+        
         public override string ToString()
         {
             return base.idTarea + " - Fecha: " + base.fecha.ToString("dd-MM-yyyy") + " - Cant.: " + cantidadRepuesta + " lts - Nro. Tanque: " + base.tanque.idTanque.ToString();

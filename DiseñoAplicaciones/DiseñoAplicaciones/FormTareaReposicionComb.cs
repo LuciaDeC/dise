@@ -30,7 +30,7 @@ namespace InterfazGrafica
 
             listBoxListaTareas.Show();
             listBoxListaTareas.Items.Clear();
-            foreach (TareaReposicionCombustible tarea in fachada.getListaTareasReposicion())
+            foreach (TareaReposicionCombustible tarea in fachada.getListaTareasReposicionCombustible())
             {
                 listBoxListaTareas.Items.Add(tarea);
             }
@@ -50,12 +50,12 @@ namespace InterfazGrafica
                     int idTarea = Convert.ToInt32(textBoxIdTarea.Text.Trim());
                     if (tareaSeleccionada == null)
                     {
-                        fachada.crearTareaReposicion(idTarea, (TanqueCombustible)comboBoxTanque.SelectedItem, cantidad);
+                        fachada.crearTareaReposicionCombustible(idTarea, (TanqueCombustible)comboBoxTanque.SelectedItem, cantidad);
                         MessageBox.Show("La tarea ha sido creada");
                     }
 
                     listBoxListaTareas.Items.Clear();
-                    foreach (TareaReposicionCombustible t in fachada.getListaTareasReposicion())
+                    foreach (TareaReposicionCombustible t in fachada.getListaTareasReposicionCombustible())
                     {
                         listBoxListaTareas.Items.Add(t);
                     }
