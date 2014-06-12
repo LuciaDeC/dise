@@ -26,3 +26,4 @@ C:\Users\Lucia\Desktop\ObligatorioI_DA\DiseñoAplicaciones\DiseñoAplicaciones\D
 C:\Users\Lucia\Desktop\ObligatorioI_DA\DiseñoAplicaciones\DiseñoAplicaciones\DiseñoAplicaciones\obj\Debug\InterfazGrafica.csproj.GenerateResource.Cache
 C:\Users\Lucia\Desktop\ObligatorioI_DA\DiseñoAplicaciones\DiseñoAplicaciones\DiseñoAplicaciones\obj\Debug\InterfazGrafica.exe
 C:\Users\Lucia\Desktop\ObligatorioI_DA\DiseñoAplicaciones\DiseñoAplicaciones\DiseñoAplicaciones\obj\Debug\InterfazGrafica.pdb
+C:\Users\alejandro\Desktop\diseno\dise\DiseñoAplicaciones\DiseñoAplicaciones\bin\Debug\InterfazGrafica.exe.config
