@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Data.OleDb;
 using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Persistencia
 {
     public class ConnBD
     {
         private static ConnBD instance;
-        private OleDbConnection conexion;
-        private OleDbDataReader dr;
+        private SqlConnection conn;
+        private SqlDataReader dr;
 
-        public OleDbDataReader getDataReader()
+        public SqlDataReader getDataReader()
         {
             return this.dr;
         }
@@ -29,25 +31,49 @@ namespace Persistencia
 
         public void conectarse()
         {
-          /*  this.conexion = new OleDbConnection(ConfigurationManager.AppSettings["Path"]);
-            this.conexion.Close();
-            this.conexion.Open();*/
+            this.conn = new SqlConnection("server=bruno-PC\\SQLEXPRESS;" +
+                                          "Trusted_Connection=yes;" +
+                                          "database=diseno; " +
+                                          "connection timeout=30");
+            try
+            {
+                conn.Open();
+                /*ejemplo de como ejecutar sentencias y sacar los datos del resultado
+                SqlCommand addSite = new SqlCommand("INSERT INTO Usuario (id) " + " VALUES (1)", conn);
+                addSite.ExecuteNonQuery();
+
+                string strSQL = string.Format("Select * From Usuario");
+                SqlCommand myCommand = new SqlCommand(strSQL, conn);
+                SqlDataReader reader = myCommand.ExecuteReader();
+                while (reader.Read())
+                {
+                    Console.WriteLine(reader["id"].ToString());
+                }
+
+                */
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                Console.Write("Error al ejecutar la consulta " + ex);
+            }
         }
 
         public void desconectarse()
         {
-            this.conexion.Close();
+            this.conn.Close();
         }
 
         public void ejecutar(string sentencia)
         {
-            OleDbCommand cmd = new OleDbCommand(sentencia, this.conexion);
+            SqlCommand cmd = new SqlCommand(sentencia, this.conn);
             cmd.ExecuteNonQuery();
         }
 
         public void traerDatos(string sentencia)
         {
-            OleDbCommand cmd = new OleDbCommand(sentencia, this.conexion);
+            SqlCommand cmd = new SqlCommand(sentencia, this.conn);
+            cmd.ExecuteNonQuery();
             this.dr = cmd.ExecuteReader();
         }
 
