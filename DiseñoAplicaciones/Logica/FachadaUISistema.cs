@@ -284,40 +284,51 @@ namespace Logica
      
         #endregion
 
-        #region TAREAREPOSICION
+        #region TAREAREPOSICIONCOMBUSTIBLE
 
-        public void crearTareaReposicionCombustible(int id, TanqueCombustible unTanque, int cantidad)
+        public void crearTareaReposicionCombustible(TanqueCombustible unTanque, int cantidad)
         {
-            if (!sis.existeTarea(id) && (chequearCapacidad(unTanque, cantidad)))
-            {
-                sis.crearTareaReposicionCombustible(id, unTanque, cantidad);
-            }
-            else
-            {
-                throw new MiExcepcion("La tarea ya existe");
-            }
+            sis.crearTareaReposicionCombustible(unTanque, cantidad);
+            
         }
 
-
-        public bool chequearCapacidad(TanqueCombustible tanque, int cantidad)
-        {
-            if (sis.chequearCapacidad(tanque, cantidad))
-            {
-                return true;
-            }
-            else
-            {
-                throw new MiExcepcion("No es posible realizar la reposición, supera la capacidad disponible.");
-            }
-        }
         public List<TareaReposicionCombustible> getListaTareasReposicionCombustible()
         {
             return sis.listaTareasReposicionCombustible;
         }
+        #endregion
 
+        #region TAREAREPOSICIONACEITE
+
+        public void crearTareaReposicionAceite(TanqueAceite unTanque, int cantidad)
+        {
+            sis.crearTareaReposicionAceite(unTanque, cantidad);
+
+        }
+
+        public List<TareaReposicionAceite> getListaTareasReposicionAceite()
+        {
+            return sis.listaTareasReposicionAceite;
+        }
 
         #endregion
 
+
+        #region TAREAREPOSICIONAGUA
+
+        public void crearTareaReposicionAgua(TanqueAgua unTanque, int cantidad)
+        {
+            sis.crearTareaReposicionAgua(unTanque, cantidad);
+
+        }
+
+        public List<TareaReposicionAgua> getListaTareasReposicionAgua()
+        {
+            return sis.listaTareasReposicionAgua;
+        }
+
+
+        #endregion
 
         // TAREAS DE TRATAMIENTO 
 
@@ -362,6 +373,9 @@ namespace Logica
             return sis.listaTareaTratamientoCombustible;
         }
         #endregion
+
+
+
 
         // TAREAS DE LIMPIEZA 
 

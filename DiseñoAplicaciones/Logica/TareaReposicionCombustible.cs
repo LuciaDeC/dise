@@ -12,7 +12,10 @@ namespace Logica
         public TareaReposicionCombustible(int id, TanqueCombustible unTanque, int cantidad) :
             base(id, unTanque, cantidad)
         {
-            
+            this.tanque.cantidadActual = unTanque.cantidadActual + cantidad;
+            this.tanque.capacidadDisponible = unTanque.capacidad + unTanque.cantidadActual;
+            this.tanque.capacidadDispoPorcentaje = (unTanque.capacidadDisponible * 100) / unTanque.capacidad;
+
         }
         
         public override string ToString()

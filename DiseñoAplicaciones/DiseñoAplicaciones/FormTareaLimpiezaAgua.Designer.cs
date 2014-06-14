@@ -74,6 +74,7 @@
             this.buttonSalir.TabIndex = 19;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.UseVisualStyleBackColor = true;
+            this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
             // 
             // buttonRealizar
             // 
@@ -93,7 +94,7 @@
             this.listBoxTanquesAgua.Size = new System.Drawing.Size(176, 212);
             this.listBoxTanquesAgua.TabIndex = 17;
             // 
-            // FormLimpiezaTanqueAgua
+            // FormTareaLimpiezaAgua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,7 +105,7 @@
             this.Controls.Add(this.buttonSalir);
             this.Controls.Add(this.buttonRealizar);
             this.Controls.Add(this.listBoxTanquesAgua);
-            this.Name = "FormLimpiezaTanqueAgua";
+            this.Name = "FormTareaLimpiezaAgua";
             this.Text = "Form1";
             this.ResumeLayout(false);
 

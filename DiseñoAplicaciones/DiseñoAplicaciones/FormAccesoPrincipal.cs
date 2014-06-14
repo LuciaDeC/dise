@@ -162,5 +162,41 @@ namespace InterfazGrafica
             FormTareaTratamientoAgua ventanaTarea = new FormTareaTratamientoAgua();
             ventanaTarea.Show();
         }
+
+        private void combustibleToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormTareaTratamientoComb ventanaTarea = new FormTareaTratamientoComb();
+            ventanaTarea.Show();
+        }
+
+        private void combustibleToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FormTareaLimpiezaComb ventanaTarea = new FormTareaLimpiezaComb();
+            ventanaTarea.Show();
+        }
+
+        private void aceiteToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FormTareaLimpiezaAceite ventanaTarea = new FormTareaLimpiezaAceite();
+            ventanaTarea.Show();
+        }
+
+        private void aguaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormTareaLimpiezaAgua ventanaTarea = new FormTareaLimpiezaAgua();
+            ventanaTarea.Show();
+        }
+
+        private void aceiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTareaReposicionAceite ventanaTarea = new FormTareaReposicionAceite();
+            ventanaTarea.Show();
+        }
+
+        private void aguaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTareaReposicionAgua ventanaTarea = new FormTareaReposicionAgua();
+            ventanaTarea.Show();
+        }
     } 
 }

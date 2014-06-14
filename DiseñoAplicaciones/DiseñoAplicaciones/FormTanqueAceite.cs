@@ -51,8 +51,7 @@ namespace InterfazGrafica
                     }
                     else
                     {
-                       //fachada.editarTanqueAceite(numero, descripcion, capacidad, viscosidad, tanqueSeleccionado);
-                        MessageBox.Show("El tanque ha sido editado");
+                        MessageBox.Show("Error");
                     }
                     borrarDatos();
 

@@ -32,6 +32,10 @@ namespace Logica
         private List<TareaLimpiezaCombustible> ListaTareaLimpiezaCombustible;
 
         private static bool datosCargados;
+        
+        private static int idTareaLimpiezaMax;
+        private static int idTareaTratamientoMax;
+        private static int idTareaReposicionMax;
 
         #region SINGLETON
 
@@ -72,6 +76,7 @@ namespace Logica
             this.ListaTareaLimpiezaCombustible = new List<TareaLimpiezaCombustible>();
             datosCargados = false;
         }
+
         #endregion
 
         #region getsLISTAS
@@ -278,14 +283,22 @@ namespace Logica
 
         #region TAREAREPOSICIONCOMBUSTIBLE
 
-        public void crearTareaReposicionCombustible(int id, TanqueCombustible unTanque, int cantidad)
+        public void crearTareaReposicionCombustible(TanqueCombustible unTanque, int cantidad)
         {
-            if (!existeTarea(id)){
-                TareaReposicionCombustible tarea = new TareaReposicionCombustible(id, unTanque, cantidad);
-                this.listaTareasReposicionCombustible.Add(tarea);
-            }
+            int id = idTareaTratamientoMax + 1;
+            idTareaTratamientoMax = idTareaTratamientoMax + 1;
+            if (chequearCapacidad(unTanque, cantidad))
+                {
+                    TareaReposicionCombustible tarea = new TareaReposicionCombustible(id, unTanque, cantidad);
+                    this.listaTareasReposicionCombustible.Add(tarea);
+                }
+                else
+                {
+                    throw new MiExcepcion("No es posible realizar la tarea de reposición, la cantidad a ingresar supera la capacidad disponible del tanque");
+                }
+            
         }
-
+        
         public bool chequearCapacidad(TanqueCombustible tanque, int cantidad)
         {
             bool ok = false;
@@ -295,19 +308,24 @@ namespace Logica
             }
             return ok;
         }
-
-       
-
         #endregion
 
         #region TAREAREPOSICIONACEITE
 
-        public void crearTareaReposicionAceite(int id, TanqueAceite unTanque, int cantidad)
+        public void crearTareaReposicionAceite(TanqueAceite unTanque, int cantidad)
         {
-            if (!existeTarea(id))
+            int id = idTareaReposicionMax + 1;
+            idTareaReposicionMax = idTareaReposicionMax + 1;
+            int nuevaRepo = unTanque.cantidadActual + cantidad;
+            int nuevaCapDispoPorc = ((unTanque.capacidadDisponible - nuevaRepo) * 100) / unTanque.capacidad;
+            if (nuevaCapDispoPorc <= 10)
             {
                 TareaReposicionAceite tarea = new TareaReposicionAceite(id, unTanque, cantidad);
                 this.listaTareasReposicionAceite.Add(tarea);
+            }
+            else
+            {
+                throw new MiExcepcion("No es posible realizar la tarea de reposición, la cantidad a ingresar supera la capacidad disponible del tanque");
             }
         }
 
@@ -325,13 +343,13 @@ namespace Logica
 
         #region TAREAREPOSICIONAGUA
 
-        public void crearTareaReposicionAgua(int id, TanqueAgua unTanque, int cantidad)
+        public void crearTareaReposicionAgua(TanqueAgua unTanque, int cantidad)
         {
-            if (!existeTarea(id))
-            {
-                TareaReposicionAgua tarea = new TareaReposicionAgua(id, unTanque, cantidad);
-                this.listaTareasReposicionAgua.Add(tarea);
-            }
+            int id = idTareaReposicionMax + 1;
+            idTareaReposicionMax = idTareaReposicionMax + 1; 
+            TareaReposicionAgua tarea = new TareaReposicionAgua(id, unTanque, cantidad);
+            this.listaTareasReposicionAgua.Add(tarea);
+            
         }
 
         public bool chequearCapacidad(TanqueAgua tanque, int cantidad)
@@ -354,10 +372,11 @@ namespace Logica
 
         public void crearTareaTratamientoAgua(TanqueAgua unTanque)
         {
-                int id = largoListaTareaTratamientoAgua() + 1;
-                TareaTratamientoAgua tarea = new TareaTratamientoAgua(id, unTanque);
-                unTanque.indiceCalidad = 5;
-                this.listaTareaTratamientoAgua.Add(tarea);
+            int id = idTareaTratamientoMax + 1;
+            idTareaTratamientoMax = idTareaTratamientoMax + 1;
+            TareaTratamientoAgua tarea = new TareaTratamientoAgua(id, unTanque);
+            unTanque.indiceCalidad = 5;
+            this.listaTareaTratamientoAgua.Add(tarea);
         }
         #endregion
         
@@ -365,17 +384,18 @@ namespace Logica
 
         public void crearTareaTratamientoAceite(TanqueAceite unTanque)
         {
-            
-                int id = largoListaTareaTratamientoAceite() + 1;
-                TareaTratamientoAceite tarea = new TareaTratamientoAceite(id, unTanque);
-                if (unTanque.indiceCalidad >= 1 && unTanque.indiceCalidad <= 3)
-                {
-                    unTanque.indiceCalidad = unTanque.indiceCalidad + 2;
-                }
-                else {
-                    unTanque.indiceCalidad = 5;
-                }
-                this.listaTareaTratamientoAceite.Add(tarea);
+
+            int id = idTareaTratamientoMax + 1;
+            idTareaTratamientoMax = idTareaTratamientoMax + 1;
+            TareaTratamientoAceite tarea = new TareaTratamientoAceite(id, unTanque);
+            if (unTanque.indiceCalidad <= 3)
+            {
+                unTanque.indiceCalidad = unTanque.indiceCalidad + 2;
+            }
+            else {
+                unTanque.indiceCalidad = 5;
+            }
+            this.listaTareaTratamientoAceite.Add(tarea);
             
         }
         #endregion
@@ -385,11 +405,12 @@ namespace Logica
         public void crearTareaTratamientoComb(TanqueCombustible unTanque)
         {
 
-            int id = largoListaTareaTratamientoComb() + 1;
+            int id = idTareaTratamientoMax + 1;
+            idTareaTratamientoMax = idTareaTratamientoMax + 1;
             TareaTratamientoCombustible tarea = new TareaTratamientoCombustible(id, unTanque);
-            if (unTanque.indiceCalidad >= 1 && unTanque.indiceCalidad <= 3)
+            if (unTanque.indiceCalidad <= 4)
             {
-                unTanque.indiceCalidad = unTanque.indiceCalidad + 2;
+                unTanque.indiceCalidad = unTanque.indiceCalidad + 1;
             }
             else
             {
@@ -407,34 +428,71 @@ namespace Logica
 
         public void crearTareaLimpiezaAgua(TanqueAgua unTanque)
         {
-            int id = largoListaTareaLimpiezaAgua() + 1;
-            TareaLimpiezaAgua tarea = new TareaLimpiezaAgua(id, unTanque);
-            unTanque.indiceCalidad = 5;
-            this.listaTareaLimpiezaAgua.Add(tarea);
+            int id = idTareaLimpiezaMax + 1;
+            idTareaLimpiezaMax = idTareaLimpiezaMax + 1;
+            DateTime seisMesesDesdeHoy = DateTime.Now.AddMonths(-6);
+            if ((seisMesesDesdeHoy >= unTanque.fechaUltimaLimpieza) && (unTanque.capacidadDispoPorcentaje <= 90))
+            {
+                TareaLimpiezaAgua tarea = new TareaLimpiezaAgua(id, unTanque);
+                unTanque.fechaUltimaLimpieza = DateTime.Now;
+                unTanque.cantidadActual = 0;
+                unTanque.capacidadDisponible = unTanque.capacidad;
+                this.listaTareaLimpiezaAgua.Add(tarea);
+            } 
+            else
+            {
+                throw new MiExcepcion("No es posible realizar la tarea de limpieza. Recuerde que la fecha de la ultima limpieza debe ser mayor a seis meses y la capacidad del tanque debe ser menor al 10%.");
+            } 
         }
+
         #endregion
 
         #region TAREALIMPIEZAACEITE
 
         public void crearTareaLimpiezaAceite(TanqueAceite unTanque)
         {
-            int id = largoListaTareaLimpiezaAceite() + 1;
-            TareaLimpiezaAceite tarea = new TareaLimpiezaAceite(id, unTanque);
-            unTanque.indiceCalidad = 5;
-            this.listaTareaLimpiezaAceite.Add(tarea);
+
+            int id = idTareaLimpiezaMax + 1;
+            idTareaLimpiezaMax = idTareaLimpiezaMax + 1;
+            DateTime seisMesesDesdeHoy = DateTime.Now.AddMonths(-12);
+            if ((seisMesesDesdeHoy >= unTanque.fechaUltimaLimpieza) && (unTanque.capacidadDispoPorcentaje <= 90))
+            {
+                TareaLimpiezaAceite tarea = new TareaLimpiezaAceite(id, unTanque);
+                unTanque.fechaUltimaLimpieza = DateTime.Now;
+                unTanque.cantidadActual = 0;
+                unTanque.capacidadDisponible = unTanque.capacidad;
+                this.listaTareaLimpiezaAceite.Add(tarea);
+            }
+            else
+            {
+                throw new MiExcepcion("No es posible realizar la tarea de limpieza. Recuerde que la fecha de la ultima limpieza debe ser mayor a un año y la capacidad del tanque debe ser menor al 10%.");
+            } 
         }
         #endregion
 
+        
         #region TAREALIMPIEZACOMB
 
         public void crearTareaLimpiezaComb(TanqueCombustible unTanque)
         {
-            int id = largoListaTareaLimpiezaComb() + 1;
-            TareaLimpiezaCombustible tarea = new TareaLimpiezaCombustible(id, unTanque);
-            unTanque.indiceCalidad = 5;
-            this.listaTareaLimpiezaCombustible.Add(tarea);
+            int id = idTareaLimpiezaMax + 1;
+            idTareaLimpiezaMax = idTareaLimpiezaMax + 1;
+            DateTime seisMesesDesdeHoy = DateTime.Now.AddMonths(-12);
+            if ((seisMesesDesdeHoy >= unTanque.fechaUltimaLimpieza) && (unTanque.capacidadDispoPorcentaje <= 9))
+            {
+                TareaLimpiezaCombustible tarea = new TareaLimpiezaCombustible(id, unTanque);            
+                unTanque.fechaUltimaLimpieza = DateTime.Now;
+                unTanque.cantidadActual = 0;
+                unTanque.capacidadDisponible = unTanque.capacidad;
+                this.listaTareaLimpiezaCombustible.Add(tarea);
+            }
+            else
+            {
+                throw new MiExcepcion("No es posible realizar la tarea de limpieza. Recuerde que la fecha de la ultima limpieza debe ser mayor a un año y la capacidad del tanque debe ser menor al 10%.");
+            }          
         }
         #endregion
+
 
         #region TANQUEACEITE
         public void crearTanqueAceite(int numero, String descripcion, int capacidad, int viscosidad)
@@ -927,15 +985,6 @@ namespace Logica
             }
             return false;
         }
-        public bool existeTarea(int idTarea)
-        {
-            foreach (TareaReposicionCombustible t in listaTareasReposicionCombustible)
-            {
-                if (t.idTarea == idTarea)
-                    return true;
-            }
-            return false;
-        }
 
         public bool existeTanqueAgua(int idTanque)
         {
@@ -1071,6 +1120,10 @@ namespace Logica
             return listaFiltrada;
         }
         #endregion
+
+
+
+        // HAY QUE BORRAR ESTO CAPAZ
 
         #region LARGOLISTAS
 

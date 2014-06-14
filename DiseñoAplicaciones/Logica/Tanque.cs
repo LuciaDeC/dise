@@ -15,7 +15,7 @@ namespace Logica
         private String Descripcion;
         private int CapacidadDisponible;
         private int IndiceCalidad;
-
+        private DateTime FechaUltimaLimpieza;
         
         private List<IObserver<Tanque>> listaObeservers = new List<IObserver<Tanque>>();
 
@@ -27,6 +27,7 @@ namespace Logica
             this.cantidadActual = 0;
             this.CapacidadDisponible = capacidad;
             this.CapDisponiblePorcentaje = 100;
+            this.FechaUltimaLimpieza = DateTime.Now;
             this.IndiceCalidad = 5;
         }
 
@@ -93,6 +94,11 @@ namespace Logica
             }
         }
 
+        public DateTime fechaUltimaLimpieza
+        {
+            get { return FechaUltimaLimpieza; }
+            set { FechaUltimaLimpieza = value; }
+        }
 
         public int capacidad
         {

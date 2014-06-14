@@ -79,5 +79,15 @@ namespace InterfazGrafica
             }
             tanqueSeleccionado = null;
         }
+
+        private void listBoxTanquesAgua_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

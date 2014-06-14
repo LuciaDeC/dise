@@ -30,7 +30,8 @@ namespace Logica
                 this.Fecha = DateTime.Now.Date;
                 unaManguera.tanque.cantidadActual = unaManguera.tanque.cantidadActual - unaCantidad;
                 unaManguera.litrosExpendidos = unaManguera.litrosExpendidos + unaCantidad;
-                unaManguera.tanque.capacidadDisponible = unaManguera.tanque.capacidad - unaManguera.tanque.cantidadActual;            
+                unaManguera.tanque.capacidadDisponible = unaManguera.tanque.capacidad - unaManguera.tanque.cantidadActual;
+                unaManguera.tanque.capacidadDispoPorcentaje = (unaManguera.tanque.capacidadDisponible * 100) / unaManguera.tanque.capacidad;
          }
 
         public Vehiculo vehiculo

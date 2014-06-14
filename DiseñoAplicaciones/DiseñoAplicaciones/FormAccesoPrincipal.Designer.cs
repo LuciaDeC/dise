@@ -54,6 +54,7 @@
             this.reposiciónDeAceiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combustibleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aceiteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aguaToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.reposiciónDeAguaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.combustibleToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.aceiteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,7 +63,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.aguaToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -231,21 +231,23 @@
             // combustibleToolStripMenuItem
             // 
             this.combustibleToolStripMenuItem.Name = "combustibleToolStripMenuItem";
-            this.combustibleToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.combustibleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.combustibleToolStripMenuItem.Text = "Combustible";
             this.combustibleToolStripMenuItem.Click += new System.EventHandler(this.combustibleToolStripMenuItem_Click);
             // 
             // aceiteToolStripMenuItem
             // 
             this.aceiteToolStripMenuItem.Name = "aceiteToolStripMenuItem";
-            this.aceiteToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.aceiteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aceiteToolStripMenuItem.Text = "Aceite";
+            this.aceiteToolStripMenuItem.Click += new System.EventHandler(this.aceiteToolStripMenuItem_Click);
             // 
             // aguaToolStripMenuItem
             // 
             this.aguaToolStripMenuItem.Name = "aguaToolStripMenuItem";
-            this.aguaToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.aguaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aguaToolStripMenuItem.Text = "Agua";
+            this.aguaToolStripMenuItem.Click += new System.EventHandler(this.aguaToolStripMenuItem_Click);
             // 
             // reposiciónDeAceiteToolStripMenuItem
             // 
@@ -262,6 +264,7 @@
             this.combustibleToolStripMenuItem1.Name = "combustibleToolStripMenuItem1";
             this.combustibleToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.combustibleToolStripMenuItem1.Text = "Combustible";
+            this.combustibleToolStripMenuItem1.Click += new System.EventHandler(this.combustibleToolStripMenuItem1_Click);
             // 
             // aceiteToolStripMenuItem1
             // 
@@ -269,6 +272,13 @@
             this.aceiteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aceiteToolStripMenuItem1.Text = "Aceite";
             this.aceiteToolStripMenuItem1.Click += new System.EventHandler(this.aceiteToolStripMenuItem1_Click);
+            // 
+            // aguaToolStripMenuItem3
+            // 
+            this.aguaToolStripMenuItem3.Name = "aguaToolStripMenuItem3";
+            this.aguaToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.aguaToolStripMenuItem3.Text = "Agua";
+            this.aguaToolStripMenuItem3.Click += new System.EventHandler(this.aguaToolStripMenuItem3_Click);
             // 
             // reposiciónDeAguaToolStripMenuItem
             // 
@@ -283,20 +293,23 @@
             // combustibleToolStripMenuItem2
             // 
             this.combustibleToolStripMenuItem2.Name = "combustibleToolStripMenuItem2";
-            this.combustibleToolStripMenuItem2.Size = new System.Drawing.Size(142, 22);
+            this.combustibleToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.combustibleToolStripMenuItem2.Text = "Combustible";
+            this.combustibleToolStripMenuItem2.Click += new System.EventHandler(this.combustibleToolStripMenuItem2_Click);
             // 
             // aceiteToolStripMenuItem2
             // 
             this.aceiteToolStripMenuItem2.Name = "aceiteToolStripMenuItem2";
-            this.aceiteToolStripMenuItem2.Size = new System.Drawing.Size(142, 22);
+            this.aceiteToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.aceiteToolStripMenuItem2.Text = "Aceite";
+            this.aceiteToolStripMenuItem2.Click += new System.EventHandler(this.aceiteToolStripMenuItem2_Click);
             // 
             // aguaToolStripMenuItem1
             // 
             this.aguaToolStripMenuItem1.Name = "aguaToolStripMenuItem1";
-            this.aguaToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.aguaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aguaToolStripMenuItem1.Text = "Agua";
+            this.aguaToolStripMenuItem1.Click += new System.EventHandler(this.aguaToolStripMenuItem1_Click);
             // 
             // cargarDatosToolStripMenuItem
             // 
@@ -346,13 +359,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // aguaToolStripMenuItem3
-            // 
-            this.aguaToolStripMenuItem3.Name = "aguaToolStripMenuItem3";
-            this.aguaToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
-            this.aguaToolStripMenuItem3.Text = "Agua";
-            this.aguaToolStripMenuItem3.Click += new System.EventHandler(this.aguaToolStripMenuItem3_Click);
             // 
             // FormAccesoPrincipal
             // 

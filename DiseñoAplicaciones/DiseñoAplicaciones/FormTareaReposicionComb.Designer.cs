@@ -32,10 +32,8 @@
             this.listBoxListaTareas = new System.Windows.Forms.ListBox();
             this.buttonSalir = new System.Windows.Forms.Button();
             this.buttonGuardar = new System.Windows.Forms.Button();
-            this.textBoxIdTarea = new System.Windows.Forms.TextBox();
             this.textBoxCantidad = new System.Windows.Forms.TextBox();
             this.comboBoxTanque = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -86,13 +84,6 @@
             this.buttonGuardar.UseVisualStyleBackColor = true;
             this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
-            // textBoxIdTarea
-            // 
-            this.textBoxIdTarea.Location = new System.Drawing.Point(424, 72);
-            this.textBoxIdTarea.Name = "textBoxIdTarea";
-            this.textBoxIdTarea.Size = new System.Drawing.Size(100, 20);
-            this.textBoxIdTarea.TabIndex = 12;
-            // 
             // textBoxCantidad
             // 
             this.textBoxCantidad.Location = new System.Drawing.Point(424, 213);
@@ -108,16 +99,6 @@
             this.comboBoxTanque.Size = new System.Drawing.Size(286, 21);
             this.comboBoxTanque.TabIndex = 9;
             this.comboBoxTanque.SelectedIndexChanged += new System.EventHandler(this.comboBoxTanque_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Nro Tarea:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -165,7 +146,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(331, 52);
@@ -197,7 +177,6 @@
             this.Controls.Add(this.listBoxListaTareas);
             this.Controls.Add(this.buttonSalir);
             this.Controls.Add(this.buttonGuardar);
-            this.Controls.Add(this.textBoxIdTarea);
             this.Controls.Add(this.textBoxCantidad);
             this.Controls.Add(this.comboBoxTanque);
             this.Controls.Add(this.groupBox1);
@@ -217,10 +196,8 @@
         private System.Windows.Forms.ListBox listBoxListaTareas;
         private System.Windows.Forms.Button buttonSalir;
         private System.Windows.Forms.Button buttonGuardar;
-        private System.Windows.Forms.TextBox textBoxIdTarea;
         private System.Windows.Forms.TextBox textBoxCantidad;
         private System.Windows.Forms.ComboBox comboBoxTanque;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

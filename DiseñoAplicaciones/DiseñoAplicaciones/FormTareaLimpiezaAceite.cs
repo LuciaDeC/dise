@@ -80,5 +80,10 @@ namespace InterfazGrafica
             }
             tanqueSeleccionado = null;
         }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

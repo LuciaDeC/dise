@@ -44,13 +44,13 @@ namespace InterfazGrafica
                 TipoCombustible tipoC = (TipoCombustible)comboBoxTipoComb.SelectedItem;
                 TanqueCombustible tanque = (TanqueCombustible)comboBoxTanque.SelectedItem;
 
-                if ((textBoxIdTarea.Text.Trim().Length > 0) && (textBoxCantidad.Text.Trim().Length > 0) && (tipoC != null) && (tanque != null))
+                if ((textBoxCantidad.Text.Trim().Length > 0) && (tipoC != null) && (tanque != null))
                 {
                     int cantidad = Convert.ToInt32(textBoxCantidad.Text.Trim());
-                    int idTarea = Convert.ToInt32(textBoxIdTarea.Text.Trim());
+
                     if (tareaSeleccionada == null)
                     {
-                        fachada.crearTareaReposicionCombustible(idTarea, (TanqueCombustible)comboBoxTanque.SelectedItem, cantidad);
+                        fachada.crearTareaReposicionCombustible((TanqueCombustible)comboBoxTanque.SelectedItem, cantidad);
                         MessageBox.Show("La tarea ha sido creada");
                     }
 
@@ -60,6 +60,7 @@ namespace InterfazGrafica
                         listBoxListaTareas.Items.Add(t);
                     }
                     listBoxListaTareas.Show();
+                    borrarDatos();
                 }
                 else
                 {
@@ -80,7 +81,6 @@ namespace InterfazGrafica
         private void borrarDatos()
         {
             textBoxCantidad.Clear();
-            textBoxIdTarea.Clear();
         }
 
         private void label1_Click(object sender, EventArgs e)

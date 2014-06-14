@@ -11,13 +11,14 @@ namespace Logica
         private int viscosidad;
         
         //cim
-        public TanqueAceite(int numero, String descripcion, int capacidad, int viscosidad)
+        public TanqueAceite(int numero, String descripcion, int capacidad,  int viscosidad)
             : base(numero, descripcion, capacidad)
         {
             this.viscosidad =viscosidad;
             this.capacidadDispoPorcentaje = base.capacidadDispoPorcentaje;
             this.capacidadDisponible = base.capacidadDisponible;
             this.cantidadActual = base.cantidadActual;
+            this.fechaUltimaLimpieza = base.fechaUltimaLimpieza;
                    
         }
 
@@ -28,7 +29,7 @@ namespace Logica
         }
         public override string ToString()
         {
-            return base.idTanque + " - " + base.descripcion + " - Capacidad: " + base.capacidad + "Lts - Disponible: " + base.cantidadActual + " - Viscosidad: " + viscosidad;
+            return base.idTanque + " - " + base.descripcion + " - Cap: " + base.capacidad + "Lts -  Cap Actual: " + base.cantidadActual + " - Viscosidad: " + viscosidad + " - Ind calidad: " + base.indiceCalidad;
         }
     }
 }

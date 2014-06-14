@@ -68,8 +68,7 @@ namespace InterfazGrafica
 
                     }
                     else {
-                        fachada.editarTanqueCombustible(numero, descripcion, capacidad, (TipoCombustible)comboTiposCombustible.SelectedItem, tanqueSeleccionado);
-                        MessageBox.Show("El tanque ha sido editado");
+                        MessageBox.Show("Error");
                     }
                     borrarDatos();
                    

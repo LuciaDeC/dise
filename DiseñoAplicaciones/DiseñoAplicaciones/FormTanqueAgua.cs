@@ -62,8 +62,7 @@ namespace InterfazGrafica
                     }
                     else
                     {
-                       // fachada.editarTanqueAgua(numero, descripcion, capacidad, (String)comboBoxLocalizacion.SelectedItem);
-                        MessageBox.Show("El tanque ha sido editado");
+                        MessageBox.Show("Error");
                     }
                     borrarDatos();
 

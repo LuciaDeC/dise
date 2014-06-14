@@ -17,6 +17,7 @@ namespace Logica
             this.capacidadDispoPorcentaje = base.capacidadDispoPorcentaje;
             this.capacidadDisponible = base.capacidadDisponible;
             this.cantidadActual = base.cantidadActual;
+            this.fechaUltimaLimpieza = base.fechaUltimaLimpieza;
         }
 
         public TipoCombustible tipoCombustible
@@ -26,7 +27,7 @@ namespace Logica
         }
         public override string ToString()
         {
-            return base.idTanque + " - " + base.descripcion + " - " + tipoCombustible.nombre + " - Capacidad: " + base.capacidad + "Lts - Disponible: " + base.cantidadActual;
+            return base.idTanque + " - " + base.descripcion + " - " + tipoCombustible.nombre + " - Cap: " + base.capacidad + "Lts - Cap Actual: " + base.cantidadActual + " - Ind calidad: " + base.indiceCalidad;
         }
     }
 }
